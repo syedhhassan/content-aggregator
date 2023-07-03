@@ -17,7 +17,7 @@ def news(url):
 def home(request):
     url = "https://www.nytimes.com/"
     received_news = news(url)
-    json = {"name": "International", "news": received_news}
+    json = {"name": "News", "news": received_news}
     return render(request, 'index.html', json)
 
 def science(request):
